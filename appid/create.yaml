@@ -1,0 +1,16 @@
+
+---
+- name: Create APPID instance.
+  hosts: localhost
+  collections:
+   - ibm.cloudcollection
+  tasks:
+    - name: Read the variables from var file
+      include_vars:
+        file: vars.yml
+    - name: Create a APPID instance
+      ibm_resource_instance:
+        name: "appid-ansible"
+        service: "appid"
+        plan: "lite"
+        location: "us-south"
