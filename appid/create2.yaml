@@ -3,7 +3,7 @@
 - name: Create APPID instance.
   hosts: localhost
   collections:
-  - ibm.cloudcollection
+   - ibm.cloudcollection
   tasks:
   - name: Create a APPID instance
     ibm_resource_instance:
