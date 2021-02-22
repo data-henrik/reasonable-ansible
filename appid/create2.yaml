@@ -1,11 +1,6 @@
-
 ---
 - name: Create APPID instance.
   hosts: localhost
-  collections:
-    - name: https://github.com/IBM-Cloud/ansible-collection-ibm.git
-      type: git
-      version: main
   tasks:
   - name: Create a APPID instance
     ibm_resource_instance:
