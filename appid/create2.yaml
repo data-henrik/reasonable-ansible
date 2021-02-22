@@ -1,10 +1,10 @@
 ---
-- name: Create APPID instance.
+- name: Create APPID instance
   hosts: localhost
   tasks:
-  - name: Create a APPID instance
-    ibm_resource_instance:
-      name: "appid-ansible"
-      service: "appid"
-      plan: "lite"
-      location: "us-south"
+    - name: Create a APPID instance
+      ibm_resource_instance:
+        name: "appid-ansible"
+        service: "appid"
+        plan: "lite"
+        location: "us-south"
